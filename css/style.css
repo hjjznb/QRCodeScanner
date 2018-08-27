@@ -1,0 +1,36 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+#app {
+    width: 100%;
+    height: 10%;
+    text-align: center;
+}
+
+.msg {
+    color: red;
+    font-size: 25px;
+    margin-top: 10px;
+}
+
+video {
+    width: 100%;
+    height: 80%;
+}
+
+button {
+    display: block;
+    width: 90%;
+    padding: 5px 10px 5px 10px;
+    margin: 0 auto;
+    margin-top: 10px;
+    font-size: 15px;
+}
+
+
+.scans {
+    height:0;
+    overflow: hidden;
+}
