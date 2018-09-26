@@ -10,6 +10,7 @@
         <script type="text/javascript" src="js/jquery.min.js"></script>
     </head>
     <body onLoad="autoclick()">
+        <h1 class="title"></h1>
         <video id="preview"></video>
         <div id="app">
             <div class="cameras">
@@ -38,6 +39,8 @@
                     var CategoryName = getUrlParameter('CategoryName');
                     var OtherInformationName = getUrlParameter('OtherInformationName');
                     var OtherInformationType = getUrlParameter('OtherInformationType');
+                    
+                    $(".title").text(CategoryName + " - " + OtherInformationName);
                     
                     window.location.href = $('.scanContent').html()+"&&SpreadSheetColumnId="+Id+"&&CategoryName="+CategoryName+"&&OtherInformationName="+OtherInformationName+"&&OtherInformationType="+OtherInformationType+"&&Username="+Username+"&&Password="+Password;
                 });
