@@ -41,7 +41,7 @@
                 var OtherInformationNameText = getUrlParameter('OtherInformationNameText'); 
                 var OtherInformationType = getUrlParameter('OtherInformationType');
                 
-                $(".title").text(CategoryName + " - " + OtherInformationName);
+                $(".title").text(CategoryNameText + " - " + OtherInformationNameText);
                 
                 $('.scans').eq(0).bind("DOMSubtreeModified",function(){
                     window.location.href = $('.scanContent').html()+"&&SpreadSheetColumnId="+Id+"&&CategoryName="+CategoryName+"&&OtherInformationName="+OtherInformationName+"&&OtherInformationType="+OtherInformationType+"&&Username="+Username+"&&Password="+Password;
