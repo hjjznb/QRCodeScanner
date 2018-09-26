@@ -44,7 +44,7 @@
                 $(".title").text(CategoryNameText + " - " + OtherInformationNameText);
                 
                 $('.scans').eq(0).bind("DOMSubtreeModified",function(){
-                    window.location.href = $('.scanContent').html()+"&&SpreadSheetColumnId="+Id+"&&CategoryName="+CategoryName+"&&OtherInformationName="+OtherInformationName+"&&OtherInformationType="+OtherInformationType+"&&Username="+Username+"&&Password="+Password;
+                    window.location.href = $('.scanContent').html()+"&&SpreadSheetColumnId="+Id+"&&CategoryName="+CategoryName+"&&CategoryNameText="+CategoryNameText+"&&OtherInformationName="+OtherInformationName+"&&OtherInformationNameText="+OtherInformationNameText+"&&OtherInformationType="+OtherInformationType+"&&Username="+Username+"&&Password="+Password;
                 });
             });
         </script>
