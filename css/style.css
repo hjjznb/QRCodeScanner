@@ -15,13 +15,12 @@
 }
 
 .title {
-    font-size: 18px;
     text-align: center;
 }
 
 video {
     width: 100%;
-    height: 70%;
+    height: 80%;
 }
 
 button {
