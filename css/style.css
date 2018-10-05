@@ -17,12 +17,12 @@
 
 .title {
     text-align: center;
-    margin: 10px;
+    height: 5%;
 }
 
 video {
     width: 100%;
-    height: 80%;
+    height: 70%;
 }
 
 button {
@@ -34,6 +34,9 @@ button {
     font-size: 15px;
 }
 
+.backBtnContainer {
+    height: 5%;
+}
 
 .scans {
     height:0;
