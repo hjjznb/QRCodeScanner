@@ -10,7 +10,7 @@
         <script type="text/javascript" src="js/jquery.min.js"></script>
     </head>
     <body>
-        <h1 class="title">111</h1>
+        <h1 class="title"></h1>
         <video id="preview"></video>
         <div id="app">
             <div class="cameras">
@@ -28,6 +28,7 @@
                 </div>
             </div>
         </div>
+        <div class="backBtnContainer"><button class="buttons">Back</button></div>
         <script type="text/javascript" src="js/app.js"></script>
         <script>
             $(document).ready(() => {
@@ -46,6 +47,12 @@
                 $('.scans').eq(0).bind("DOMSubtreeModified",function(){
                     window.location.href = $('.scanContent').html()+"&&SpreadSheetColumnId="+Id+"&&CategoryName="+CategoryName+"&&CategoryNameText="+CategoryNameText+"&&OtherInformationName="+OtherInformationName+"&&OtherInformationNameText="+OtherInformationNameText+"&&OtherInformationType="+OtherInformationType+"&&Username="+Username+"&&Password="+Password;
                 });
+                
+                var backBtn = document.getElementsByClassName("backBtnContainer")[0];
+
+                backBtn.onclick = function() {
+                    window.location.href = "http://172.26.136.62:8012/EventDat/admin/Organizer.php?Id=" + Id;
+                }
             });
         </script>
         <script>
@@ -63,6 +70,6 @@
                     }
                 }
             };
-        </script>
+        </script>  
     </body>
 </html>
