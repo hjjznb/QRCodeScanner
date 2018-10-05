@@ -15,12 +15,6 @@
         <div id="app">
             <div class="cameras">
                 <div v-if="cameras.length === 0" class="empty"><p class="msg">No cameras found</p></div>
-                <div v-for="camera in cameras">
-                    <button v-if="camera.id == activeCameraId" :title="formatName(camera.name)" class="active buttons">{{ formatName(camera.name) }}</button>
-                    <button v-if="camera.id != activeCameraId" :title="formatName(camera.name)" class="buttons">
-                        <a @click.stop="selectCamera(camera)">{{ formatName(camera.name) }}</a>
-                    </button>
-                </div>
             </div>
             <div class="scans">
                 <div name="scans" tag="ul">
