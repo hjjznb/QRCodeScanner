@@ -10,7 +10,8 @@ var app = new Vue({
         var self = this;
         self.scanner = new Instascan.Scanner({
             video: document.getElementById('preview'),
-            scanPeriod: 5
+            scanPeriod: 5,
+            mirror: true
         });
         self.scanner.addListener('scan', function (content, image) {
             self.scans.unshift({
